@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  endpoint-create:
+    build: ./app_folder 
+    image: lambda_test
+    volumes: 
+      - ./app_folder:/var/local
+    ports:
+      - 9000:8080
